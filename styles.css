@@ -1,0 +1,212 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #3498db);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+  animation: bounceIn 1.5s ease-out;
+}
+
+/* Username Styling */
+.username {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2980b9;
+  animation: fadeIn 1.8s ease-out;
+}
+
+/* Bio Section Styling */
+.bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 15px 0;
+  color: #ecf0f1;
+  animation: fadeIn 2.2s ease-out;
+}
+
+/* Services Section Styling */
+.services-title {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #2980b9;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 2px solid #2980b9;
+  display: inline-block;
+  padding-bottom: 5px;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #bdc3c7;
+  animation: fadeIn 2.5s ease-out;
+}
+
+.service-list li {
+  margin: 8px 0;
+}
+
+/* Links Section Styling */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+/* Link Button Styling */
+.btn {
+  text-decoration: none;
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Colors for Buttons */
+.bg-primary {
+  background-color: #2980b9;
+}
+
+.bg-primary:hover {
+  background-color: #1f6f94;
+}
+
+.bg-whatsapp {
+  background-color: #25d366;
+}
+
+.bg-whatsapp:hover {
+  background-color: #1ebd54;
+}
+
+/* Link Icon Styling */
+.link-icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.btn:hover .link-icon {
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Added Keyframes for New Elegant Entrance Animation */
+@keyframes elegantEntrance {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Elegant Animation for Container */
+.container {
+  animation: elegantEntrance 1.5s ease-out;
+}
+
+/* Elegant Animation for Profile Image */
+.profile-img {
+  animation: elegantEntrance 2s ease-out;
+}
+
+/* Elegant Animation for Links */
+.links a {
+  animation: elegantEntrance 2.5s ease-out;
+}

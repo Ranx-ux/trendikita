@@ -1,0 +1,185 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #00aaff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #d1f1ff;
+  }
+  
+  /* Welcome Text Styling */
+  .welcome-text {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e6f7ff;
+    border-bottom: 2px solid #00aaff;
+  }
+  
+  .welcome-text h1 {
+    font-size: 2.5rem;
+    color: #007acc;
+  }
+  
+  .welcome-text p {
+    font-size: 1.2rem;
+    color: #005f99;
+  }
+  
+  /* Products Section */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-img {
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-name {
+    font-size: 1.5rem;
+    color: #007acc;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 1.3rem;
+    color: #00aaff;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .buy-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-btn:hover {
+    background-color: #005f99;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #007acc;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Thank You Message */
+  .thank-you-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f7ff;
+    font-size: 1.2rem;
+    color: #007acc;
+    border-top: 2px solid #00aaff;
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #005f99;
+  }
+  

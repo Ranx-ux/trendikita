@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Online Toko - TrendiKita</title>
+  
+  <!-- Link ke CSS eksternal -->
+  <link rel="stylesheet" href="styles1.css">
+  <!-- Icon untuk tombol scroll to top -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#products">Produk</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam.">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Animasi Selamat Datang -->
+  <div class="welcome-text" id="home">
+    <h1>Selamat Datang di TrendiKita!</h1>
+    <p>Temukan berbagai produk fashion terkini yang stylish dan nyaman.</p>
+  </div>
+
+  <div class="container" id="products">
+    <!-- Gambar Produk -->
+    <div class="product">
+      <img src="img/1.jpg" alt="Kaos Polosan" class="product-img">
+      <div class="product-info">
+        <h2 class="product-name">Kaos Polosan Hitam</h2>
+        <p class="product-description">Kaos polosan dengan kualitas terbaik, nyaman digunakan untuk sehari-hari.</p>
+        <p class="product-price">Rp 90.000</p>
+        <a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam." class="buy-btn" target="_blank">Beli Via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Produk lainnya (ditambah beberapa produk untuk demo) -->
+    <div class="product">
+      <img src="img/2.jpg" alt="Kaos Polosan" class="product-img">
+      <div class="product-info">
+        <h2 class="product-name">Kaos Polosan Hitam</h2>
+        <p class="product-description">Kaos polosan dengan kualitas terbaik, nyaman digunakan untuk sehari-hari.</p>
+        <p class="product-price">Rp 90.000</p>
+        <a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam." class="buy-btn" target="_blank">Beli Via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="img/3.jpg" alt="Kaos Polosan" class="product-img">
+      <div class="product-info">
+        <h2 class="product-name">Kaos Polosan Hitam</h2>
+        <p class="product-description">Kaos polosan dengan kualitas terbaik, nyaman digunakan untuk sehari-hari.</p>
+        <p class="product-price">Rp 90.000</p>
+        <a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam." class="buy-btn" target="_blank">Beli Via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Produk lainnya -->
+    <div class="product">
+      <img src="img/4.jpg" alt="Kaos Polosan" class="product-img">
+      <div class="product-info">
+        <h2 class="product-name">Kaos Polosan Hitam</h2>
+        <p class="product-description">Kaos polosan dengan kualitas terbaik, nyaman digunakan untuk sehari-hari.</p>
+        <p class="product-price">Rp 90.000</p>
+        <a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam." class="buy-btn" target="_blank">Beli Via WhatsApp</a>
+      </div>
+    </div>
+    <div class="product">
+        <img src="img/5.jpg" alt="Kaos Polosan" class="product-img">
+        <div class="product-info">
+          <h2 class="product-name">Kaos Polosan Hitam</h2>
+          <p class="product-description">Kaos polosan dengan kualitas terbaik, nyaman digunakan untuk sehari-hari.</p>
+          <p class="product-price">Rp 90.000</p>
+          <a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam." class="buy-btn" target="_blank">Beli Via WhatsApp</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/6.jpg" alt="Kaos Polosan" class="product-img">
+        <div class="product-info">
+          <h2 class="product-name">Kaos Polosan Hitam</h2>
+          <p class="product-description">Kaos polosan dengan kualitas terbaik, nyaman digunakan untuk sehari-hari.</p>
+          <p class="product-price">Rp 90.000</p>
+          <a href="https://wa.me/6285824324738?text=Saya%20tertarik%20dengan%20kaos%20polosan%20hitam." class="buy-btn" target="_blank">Beli Via WhatsApp</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Animasi Terima Kasih -->
+  <div class="thank-you-message">
+    <p>Terima kasih telah berkunjung di web kami!</p>
+  </div>
+
+  <!-- Tombol Scroll to Top -->
+  <button class="scroll-to-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i> Kembali ke atas
+  </button>
+
+  <!-- Script untuk scroll ke atas -->
+  <script>
+    // Fungsi untuk scroll ke atas
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Menampilkan tombol scroll-to-top ketika scroll lebih dari 100px
+    window.onscroll = function() {
+      const scrollButton = document.querySelector('.scroll-to-top');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollButton.style.display = "block";
+      } else {
+        scrollButton.style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>
